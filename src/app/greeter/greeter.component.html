@@ -1,0 +1,12 @@
+<!-- Test-Template -->
+<p data-test="helloWorld">Hello, {{ name }}!</p>
+<div>
+  Test1
+  <span>Test2</span>
+</div>
+<span *ngFor="let item of ['a', 'b', 'c']; let i = index">
+  {{ i }}: {{ item }}
+</span>
+<b *ngIf="name === 'Somebody'">
+  Test3
+</b>
