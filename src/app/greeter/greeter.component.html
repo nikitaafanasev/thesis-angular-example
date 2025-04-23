@@ -1,5 +1,6 @@
 <!-- Test-Template -->
 <p data-test="helloWorld">Hello, {{ name }}!</p>
+<p *ngIf="greeting$ | async as greeting">{{ greeting }}</p>
 <div>
   Test1
   <span>Test2</span>
