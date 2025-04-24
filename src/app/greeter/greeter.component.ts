@@ -1,12 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule, NgForOf, NgIf } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { of, Observable } from 'rxjs';
 import { delay } from 'rxjs/operators';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-greeter',
-    imports: [NgIf, NgForOf, FormsModule, CommonModule],
+    imports: [NgIf, NgForOf, FormsModule, CommonModule, ReactiveFormsModule],
     templateUrl: './greeter.component.html',
     styleUrl: './greeter.component.css'
 })
@@ -16,11 +17,26 @@ export class GreeterComponent implements OnInit {
 
     buttonClicked = false;
 
+    myForm!: FormGroup;
+
     onButtonClick() {
         this.buttonClicked = true;
     }
 
+    onSubmit() {
+        if (this.myForm.valid) {
+          alert('Formular wurde abgeschickt mit: ' + this.myForm.value.inputValue);
+        } else {
+          alert('Das Formular ist ungültig!');
+        }
+      }
+
+
+
     ngOnInit() {
-        console.log('Hello World');
+        // Initialisiere das Formular im ngOnInit
+        this.myForm = new FormGroup({
+        inputValue: new FormControl('', [Validators.required, Validators.minLength(3)]), // Beispielvalidierungen
+      });
     }
 }
