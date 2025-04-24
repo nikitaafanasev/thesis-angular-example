@@ -12,8 +12,13 @@ import { delay } from 'rxjs/operators';
 })
 export class GreeterComponent implements OnInit {
     @Input() name: string = 'Somebody';
-
     greeting$: Observable<string> = of('👋 1000ms sind vergangen!!').pipe(delay(1000));
+
+    buttonClicked = false;
+
+    onButtonClick() {
+        this.buttonClicked = true;
+    }
 
     ngOnInit() {
         console.log('Hello World');
