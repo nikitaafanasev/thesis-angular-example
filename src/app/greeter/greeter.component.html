@@ -8,9 +8,7 @@
 <span *ngFor="let item of ['a', 'b', 'c']; let i = index">
   <span>{{ i }}</span><span>:</span><span>{{ item }}</span>
 </span>
-<b *ngIf="name === 'Somebody'">
-  Test3
-</b>
+<b *ngIf="name === 'Somebody'">Test3</b>
 <button (click)="onButtonClick()">Klick mich an!</button>
 <p *ngIf="buttonClicked">
   Du hast den Button geklickt! 🎉
