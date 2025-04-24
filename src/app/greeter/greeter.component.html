@@ -6,7 +6,7 @@
   <span>Test2</span>
 </div>
 <span *ngFor="let item of ['a', 'b', 'c']; let i = index">
-  {{ i }}: {{ item }}
+  <span>{{ i }}</span><span>:</span><span>{{ item }}</span>
 </span>
 <b *ngIf="name === 'Somebody'">
   Test3
