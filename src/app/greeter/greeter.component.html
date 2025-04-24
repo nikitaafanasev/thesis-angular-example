@@ -1,4 +1,3 @@
-<!-- Test-Template -->
 <p data-test="helloWorld">Hello, {{ name }}!</p>
 <p *ngIf="greeting$ | async as greeting">{{ greeting }}</p>
 <div>
@@ -10,9 +9,7 @@
 </span>
 <b *ngIf="name === 'Somebody'">Test3</b>
 <button (click)="onButtonClick()">Klick mich an!</button>
-<p *ngIf="buttonClicked">
-  Du hast den Button geklickt! 🎉
-</p>
+<p *ngIf="buttonClicked">Du hast den Button geklickt!</p>
 
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
   <label for="inputValue">Gib etwas ein:</label>

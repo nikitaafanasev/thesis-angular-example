@@ -13,7 +13,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class GreeterComponent implements OnInit {
     @Input() name: string = 'Somebody';
-    greeting$: Observable<string> = of('👋 1000ms sind vergangen!!').pipe(delay(1000));
+    greeting$: Observable<string> = of('1000ms sind vergangen!!').pipe(delay(1000));
 
     buttonClicked = false;
 
