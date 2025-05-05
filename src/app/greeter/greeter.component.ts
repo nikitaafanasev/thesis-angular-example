@@ -34,9 +34,8 @@ export class GreeterComponent implements OnInit {
 
 
     ngOnInit() {
-        // Initialisiere das Formular im ngOnInit
         this.myForm = new FormGroup({
-        inputValue: new FormControl('', [Validators.required, Validators.minLength(3)]), // Beispielvalidierungen
+        inputValue: new FormControl('', [Validators.required, Validators.minLength(3)]),
       });
     }
 }

@@ -17,8 +17,6 @@
     id="inputValue"
     formControlName="inputValue" 
   />
-
-  <!-- Validierungsfehler anzeigen -->
   <div *ngIf="myForm.get('inputValue')?.invalid && myForm.get('inputValue')?.touched" style="color: red;">
     <div *ngIf="myForm.get('inputValue')?.hasError('required')">Das Feld ist erforderlich.</div>
     <div *ngIf="myForm.get('inputValue')?.hasError('minlength')">Mindestens 3 Zeichen erforderlich.</div>

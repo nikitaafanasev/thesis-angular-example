@@ -4,7 +4,7 @@ import { GreeterComponent } from './greeter/greeter.component';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, GreeterComponent],
+    imports: [RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
