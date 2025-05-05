@@ -5,6 +5,5 @@ import { PageTwoComponent } from './page-two/page-two.component';
 export const routes: Routes = [
     { path: 'page-one', component: PageOneComponent },
     { path: 'page-two', component: PageTwoComponent },
-    { path: '', redirectTo: 'page-one', pathMatch: 'full' },
-    { path: '**', redirectTo: 'page-one' }
+    { path: '', component: PageOneComponent }
 ];
