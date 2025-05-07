@@ -1,0 +1,5 @@
+/* button in Mitte platzieren */
+button {
+  margin: 1rem auto;
+  display: block;
+}

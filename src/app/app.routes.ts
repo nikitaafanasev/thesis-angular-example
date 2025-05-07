@@ -1,9 +1,9 @@
-import { Routes } from '@angular/router';
-import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
+import {Routes} from '@angular/router';
+import {LandingPageComponent} from './landing-page/landing-page.component';
+import {TodoPageComponent} from './todo-page/todo-page.component';
 
 export const routes: Routes = [
-    { path: 'page-one', component: PageOneComponent },
-    { path: 'page-two', component: PageTwoComponent },
-    { path: '', component: PageOneComponent },
+  {path: 'page-one', component: LandingPageComponent},
+  {path: 'todo', component: TodoPageComponent},
+  {path: '', component: LandingPageComponent},
 ];

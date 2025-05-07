@@ -1,0 +1,8 @@
+<h1>Todo-Liste</h1>
+<form novalidate>
+  <input [formControl]="todoControl" placeholder="Neue Aufgabe" />
+  <button type="button" [disabled]="todoControl.invalid" (click)="onSubmit()">Hinzufügen</button>
+  <div *ngIf="todoControl.invalid && todoControl.touched" class="error">
+    Bitte gib mindestens 3 Zeichen ein.
+  </div>
+</form>

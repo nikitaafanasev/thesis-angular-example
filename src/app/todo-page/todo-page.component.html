@@ -1,0 +1,5 @@
+<div class="todo-page">
+  <h2>Meine Aufgaben</h2>
+  <app-todolist [todos]="todos" (deleteRequested)="deleteTodo($event)"></app-todolist>
+  <app-todoform (todoAdded)="addTodo($event)"></app-todoform>
+</div>
