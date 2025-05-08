@@ -1,6 +1,6 @@
 <ul class="todo-list">
   <li *ngFor="let todo of todos; let i = index">
-    {{ todo }}
-    <button (click)="onDelete(i)">&times;</button>
+    <div>{{ todo }}</div>
+    <button (click)="onDelete(i)">X</button>
   </li>
 </ul>
