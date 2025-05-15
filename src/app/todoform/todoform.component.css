@@ -11,7 +11,7 @@ input {
   font-size: 1rem;
 }
 
-.add-button {
+.addButton {
   background-color: #2563eb;
   color: white;
   padding: 0.5rem 1.25rem;
@@ -24,7 +24,7 @@ input {
   width:100%;
 }
 
-.add-button:disabled {
+.addButton:disabled {
   background-color: #93c5fd;
   cursor: not-allowed;
 }
